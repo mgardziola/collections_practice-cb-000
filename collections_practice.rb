@@ -33,6 +33,12 @@ def sum_array(array)
 end
 
 def add_s(array)
-  if 
+  array.each_with_index.map do |element,index|
+    if index == 1
+      element
+    else
+      element << "s"
+    end
+  end
 end
 
